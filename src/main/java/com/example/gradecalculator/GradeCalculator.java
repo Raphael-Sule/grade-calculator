@@ -50,6 +50,6 @@ public class GradeCalculator
         }
     }
 
-
+// can start by having average checks not being be inclusive, so a 90 would be a B i.e.
 }
 
