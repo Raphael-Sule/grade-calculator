@@ -22,7 +22,7 @@ public class GradeUtils {
         throw new IllegalArgumentException("Invalid letter grade: " + letterGrade);
     }
 
-    public static double gpaConvert(char letterGrade) 
+    public static double convertToGPA(char letterGrade) 
     {
         switch (Character.toUpperCase(letterGrade)) 
         {

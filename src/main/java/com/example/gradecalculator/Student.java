@@ -56,5 +56,7 @@ public Student(String name, double[] grades, String studentId) {
     public char getLetterGrade() 
     {
         return GradeCalculator.calculateLetterGrade(getAverage());
+        
     }
+
 }
