@@ -2,6 +2,8 @@
 
 package com.example.gradecalculator;
 
+import java.util.Arrays;
+
 public class Student {
     // TODO: Add fields for student name, ID, and list of grades
 
@@ -14,16 +16,37 @@ public class Student {
     private String name;
     private double[] grades;
 
-    public Student(String name, double[] grades) {
+public Student(String name, double[] grades) {
+// Leave some checks out as students write code to be found through mutation testing
+        /*
+            if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Name cannot be null or empty");
+        }
+       
+        if (grades == null || grades.length == 0) {
+            throw new IllegalArgumentException("Grades array must not be null or empty");
+        }
+        */
         this.name = name;
-        this.grades = grades;
+        this.grades = Arrays.copyOf(grades, grades.length);
     }
 
-    public String getName() {
+    public String getName() 
+    {
         return name;
     }
 
     public double[] getGrades() {
         return grades;
+    }
+
+    public double getAverage() 
+    {
+        return GradeCalculator.calculateAverage(grades);
+    }
+
+    public char getLetterGrade() 
+    {
+        return GradeCalculator.calculateLetterGrade(getAverage());
     }
 }
