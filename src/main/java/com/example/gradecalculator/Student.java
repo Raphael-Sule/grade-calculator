@@ -14,6 +14,7 @@ public class Student {
     // TODO: Optionally add method to compute average score for this student
     
     private String name;
+    private String studentId;
     private double[] grades;
 
 public Student(String name, double[] grades) {
@@ -27,13 +28,20 @@ public Student(String name, double[] grades) {
             throw new IllegalArgumentException("Grades array must not be null or empty");
         }
         */
+        
         this.name = name;
+        this.studentId = studentId;
         this.grades = Arrays.copyOf(grades, grades.length);
     }
 
     public String getName() 
     {
         return name;
+    }
+
+    public String getStudentId() 
+    {
+        return studentId;
     }
 
     public double[] getGrades() {

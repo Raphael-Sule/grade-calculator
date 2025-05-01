@@ -7,7 +7,18 @@ public class GradeUtils {
 
     // TODO: Add other helper methods as needed (e.g., rounding)
     
-    public static boolean isPassing(char letterGrade) {
-        return false; // Placeholder
+    public static boolean isPassing(char letterGrade) 
+    {
+        switch (Character.toUpperCase(letterGrade))
+        {
+            case 'A':
+            case 'B':
+            case 'C':
+            case 'D':
+                return true;
+            case 'F':
+                return false;
+        }
+        throw new IllegalArgumentException("Invalid letter grade: " + letterGrade);
     }
-}
+}   
