@@ -13,11 +13,11 @@ public class Student {
 
     // TODO: Optionally add method to compute average score for this student
     
-    private String name;
-    private String studentId;
-    private double[] grades;
+    private final String name;
+    private final String studentId;
+    private final double[] grades;
 
-public Student(String name, double[] grades) {
+public Student(String name, double[] grades, String studentId) {
 // Leave some checks out as students write code to be found through mutation testing
         /*
             if (name == null || name.isEmpty()) {
