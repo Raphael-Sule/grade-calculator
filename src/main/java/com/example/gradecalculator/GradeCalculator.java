@@ -28,19 +28,19 @@ public class GradeCalculator
         {
             throw new IllegalArgumentException("Average must be between 0 and 100");
         }
-        if (average > 90.00) 
+        if (average >= 90.00) 
         {
             return 'A';
         } 
-        else if (average > 80.00) 
+        else if (average >= 80.00) 
         {
             return 'B';
         } 
-        else if (average > 70.00) 
+        else if (average >= 70.00) 
         {
             return 'C';
         } 
-        else if (average > 60.00) 
+        else if (average >= 60.00) 
         {
             return 'D';
         } 

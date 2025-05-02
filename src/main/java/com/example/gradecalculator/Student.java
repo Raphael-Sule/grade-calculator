@@ -5,21 +5,11 @@ package com.example.gradecalculator;
 import java.util.Arrays;
 
 public class Student {
-    // TODO: Add fields for student name, ID, and list of grades
-
-    // TODO: Add constructor to initialize student object
-
-    // TODO: Add getters and setters for the fields
-
-    // TODO: Optionally add method to compute average score for this student
-    
     private final String name;
     private final String studentId;
     private final double[] grades;
 
 public Student(String name, double[] grades, String studentId) {
-// Leave some checks out as students write code to be found through mutation testing
-        /*
             if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name cannot be null or empty");
         }
@@ -27,7 +17,7 @@ public Student(String name, double[] grades, String studentId) {
         if (grades == null || grades.length == 0) {
             throw new IllegalArgumentException("Grades array must not be null or empty");
         }
-        */
+
         
         this.name = name;
         this.studentId = studentId;
@@ -58,5 +48,7 @@ public Student(String name, double[] grades, String studentId) {
         return GradeCalculator.calculateLetterGrade(getAverage());
         
     }
+
+    
 
 }
