@@ -18,8 +18,8 @@ public class GradeCalculatorTest {
 
     @ParameterizedTest(name = "{0}")
     @MethodSource("letterGradeTestGenerator")
-    public void testLetterGrade(String testName, double score, char expectedGrade) {
-        assertEquals(expectedGrade, GradeCalculator.calculateLetterGrade(score), testName);
+    public void testLetterGrade(String testName, double average, char expectedGrade) {
+        assertEquals(expectedGrade, GradeCalculator.calculateLetterGrade(average), testName);
     }
 
     // Tests that show code can be used to teach ECT and BVT
@@ -53,17 +53,17 @@ public class GradeCalculatorTest {
 
     @ParameterizedTest(name = "{0}")
     @MethodSource("letterGradeTestGeneratorExceptions")
-    void testLetterGradeExceptions(String testName, double score, String expectedGrade) 
+    void testLetterGradeExceptions(String testName, double average) 
     {
-        assertThrows(IllegalArgumentException.class, () -> GradeCalculator.calculateLetterGrade(score));
+        assertThrows(IllegalArgumentException.class, () -> GradeCalculator.calculateLetterGrade(average));
     }
-    static Stream<Arguments> subtractDigitsTestGeneratorExceptions() {
+    static Stream<Arguments> letterGradeTestGeneratorExceptions() {
         return Stream.of(
-            Arguments.of("invalid max range", 105.0, new IllegalArgumentException()),
-            Arguments.of("invalid min range", -55.0, new IllegalArgumentException())
+            Arguments.of("invalid max range", 105.0),
+            Arguments.of("invalid min range", -55.0)
         );
     }
-
+ 
 
 
 

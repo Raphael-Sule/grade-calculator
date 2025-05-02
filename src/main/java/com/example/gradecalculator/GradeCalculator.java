@@ -26,7 +26,7 @@ public class GradeCalculator
     {
         if (average < 0 || average > 100) 
         {
-            throw new IllegalArgumentException("Average must be between 0 and 100");
+            throw new IllegalArgumentException("Score must be between 0 and 100");
         }
         if (average >= 90.00) 
         {

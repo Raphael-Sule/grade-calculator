@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.gradecalculator.GradeCalculatorTest" time="0.137" tests="18" errors="1" skipped="0" failures="17">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.gradecalculator.GradeCalculatorTest" time="0.016" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire/surefirebooter12190929743548353081.jar /Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire 2025-05-01T22-09-24_409-jvmRun1 surefire1579716749560956750tmp surefire_09254147834143449144tmp"/>
+    <property name="sun.java.command" value="/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire/surefirebooter14464754831321928443.jar /Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire 2025-05-01T22-25-31_018-jvmRun1 surefire6899796150755835865tmp surefire_06817419058481772905tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/test-classes:/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/classes:/Users/raphaelsule/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1.jar:/Users/raphaelsule/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/raphaelsule/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/raphaelsule/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/raphaelsule/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/raphaelsule/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.1/junit-jupiter-params-5.9.1.jar:/Users/raphaelsule/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/raphaelsule/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/raphaelsule/.m2/repository/org/pitest/pitest-junit5-plugin/1.1.2/pitest-junit5-plugin-1.1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire/surefirebooter12190929743548353081.jar"/>
+    <property name="surefire.real.class.path" value="/Users/raphaelsule/Documents/COLGATE/semester 6/software analysis and testing/Final/grade-calculator/target/surefire/surefirebooter14464754831321928443.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -58,93 +58,23 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testLetterGrade{String, double, String}[1]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.05">
-    <failure message="A range ==&gt; expected: java.lang.String@55183b20&lt;A&gt; but was: java.lang.Character@4f83df68&lt;A&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: A range ==> expected: java.lang.String@55183b20<A> but was: java.lang.Character@4f83df68<A>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[2]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="B range ==&gt; expected: java.lang.String@459e9125&lt;B&gt; but was: java.lang.Character@128d2484&lt;B&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: B range ==> expected: java.lang.String@459e9125<B> but was: java.lang.Character@128d2484<B>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[3]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.003">
-    <failure message="C range ==&gt; expected: java.lang.String@7cc0cdad&lt;C&gt; but was: java.lang.Character@7c7b252e&lt;C&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: C range ==> expected: java.lang.String@7cc0cdad<C> but was: java.lang.Character@7c7b252e<C>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[4]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.003">
-    <failure message="D range ==&gt; expected: java.lang.String@4d5d943d&lt;D&gt; but was: java.lang.Character@368f2016&lt;D&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: D range ==> expected: java.lang.String@4d5d943d<D> but was: java.lang.Character@368f2016<D>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[5]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="F range ==&gt; expected: java.lang.String@4c583ecf&lt;F&gt; but was: java.lang.Character@692f203f&lt;F&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: F range ==> expected: java.lang.String@4c583ecf<F> but was: java.lang.Character@692f203f<F>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[6]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="just above A  ==&gt; expected: java.lang.String@55183b20&lt;A&gt; but was: java.lang.Character@4f83df68&lt;A&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just above A  ==> expected: java.lang.String@55183b20<A> but was: java.lang.Character@4f83df68<A>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[7]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="A to B boundary ==&gt; expected: java.lang.String@55183b20&lt;A&gt; but was: java.lang.Character@4f83df68&lt;A&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: A to B boundary ==> expected: java.lang.String@55183b20<A> but was: java.lang.Character@4f83df68<A>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[8]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="just below A ==&gt; expected: java.lang.String@459e9125&lt;B&gt; but was: java.lang.Character@128d2484&lt;B&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just below A ==> expected: java.lang.String@459e9125<B> but was: java.lang.Character@128d2484<B>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[9]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.001">
-    <failure message="just above B  ==&gt; expected: java.lang.String@459e9125&lt;B&gt; but was: java.lang.Character@128d2484&lt;B&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just above B  ==> expected: java.lang.String@459e9125<B> but was: java.lang.Character@128d2484<B>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[10]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.001">
-    <failure message="B to C boundary ==&gt; expected: java.lang.String@459e9125&lt;B&gt; but was: java.lang.Character@128d2484&lt;B&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: B to C boundary ==> expected: java.lang.String@459e9125<B> but was: java.lang.Character@128d2484<B>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[11]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.003">
-    <failure message="just below B ==&gt; expected: java.lang.String@7cc0cdad&lt;C&gt; but was: java.lang.Character@7c7b252e&lt;C&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just below B ==> expected: java.lang.String@7cc0cdad<C> but was: java.lang.Character@7c7b252e<C>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[12]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="just above C  ==&gt; expected: java.lang.String@7cc0cdad&lt;C&gt; but was: java.lang.Character@7c7b252e&lt;C&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just above C  ==> expected: java.lang.String@7cc0cdad<C> but was: java.lang.Character@7c7b252e<C>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[13]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="C to D boundary ==&gt; expected: java.lang.String@7cc0cdad&lt;C&gt; but was: java.lang.Character@7c7b252e&lt;C&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: C to D boundary ==> expected: java.lang.String@7cc0cdad<C> but was: java.lang.Character@7c7b252e<C>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[14]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.005">
-    <failure message="just below C ==&gt; expected: java.lang.String@4d5d943d&lt;D&gt; but was: java.lang.Character@368f2016&lt;D&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just below C ==> expected: java.lang.String@4d5d943d<D> but was: java.lang.Character@368f2016<D>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[15]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="just above D ==&gt; expected: java.lang.String@4d5d943d&lt;D&gt; but was: java.lang.Character@368f2016&lt;D&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just above D ==> expected: java.lang.String@4d5d943d<D> but was: java.lang.Character@368f2016<D>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[16]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.014">
-    <failure message="D to F boundary ==&gt; expected: java.lang.String@4d5d943d&lt;D&gt; but was: java.lang.Character@368f2016&lt;D&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: D to F boundary ==> expected: java.lang.String@4d5d943d<D> but was: java.lang.Character@368f2016<D>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGrade{String, double, String}[17]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002">
-    <failure message="just below D ==&gt; expected: java.lang.String@4c583ecf&lt;F&gt; but was: java.lang.Character@692f203f&lt;F&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: just below D ==> expected: java.lang.String@4c583ecf<F> but was: java.lang.Character@692f203f<F>
-	at com.example.gradecalculator.GradeCalculatorTest.testLetterGrade(GradeCalculatorTest.java:22)
-]]></failure>
-  </testcase>
-  <testcase name="testLetterGradeExceptions{String, double, String}" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.004">
-    <error message="Could not find factory method [letterGradeTestGeneratorExceptions] in class [com.example.gradecalculator.GradeCalculatorTest]" type="org.junit.platform.commons.PreconditionViolationException">org.junit.platform.commons.PreconditionViolationException: Could not find factory method [letterGradeTestGeneratorExceptions] in class [com.example.gradecalculator.GradeCalculatorTest]
-</error>
-  </testcase>
+  <testcase name="testLetterGrade{String, double, char}[1]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[2]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[3]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[4]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[5]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[6]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[7]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[8]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[9]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[10]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[11]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[12]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[13]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[14]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[15]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[16]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGrade{String, double, char}[17]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0"/>
+  <testcase name="testLetterGradeExceptions{String, double}[1]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.011"/>
+  <testcase name="testLetterGradeExceptions{String, double}[2]" classname="com.example.gradecalculator.GradeCalculatorTest" time="0.002"/>
 </testsuite>
