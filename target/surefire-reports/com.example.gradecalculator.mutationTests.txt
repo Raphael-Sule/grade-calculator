@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.example.gradecalculator.mutationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in com.example.gradecalculator.mutationTests
+test_CalculateLetterGrade_MutationKilling{String, double, String}[1]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Mutation ≥ vs > at A boundary ==> expected: java.lang.String@55183b20<A> but was: java.lang.Character@4f83df68<A>
+	at com.example.gradecalculator.mutationTests.test_CalculateLetterGrade_MutationKilling(mutationTests.java:14)
+
+test_CalculateLetterGrade_MutationKilling{String, double, String}[2]  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Mutation ≥ vs > at B boundary ==> expected: java.lang.String@459e9125<B> but was: java.lang.Character@128d2484<B>
+	at com.example.gradecalculator.mutationTests.test_CalculateLetterGrade_MutationKilling(mutationTests.java:14)
+
+test_CalculateLetterGrade_MutationKilling{String, double, String}[3]  Time elapsed: 0.013 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Mutation ≥ vs > at C boundary ==> expected: java.lang.String@7cc0cdad<C> but was: java.lang.Character@7c7b252e<C>
+	at com.example.gradecalculator.mutationTests.test_CalculateLetterGrade_MutationKilling(mutationTests.java:14)
+
+test_CalculateLetterGrade_MutationKilling{String, double, String}[4]  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Mutation ≥ vs > at D boundary ==> expected: java.lang.String@4d5d943d<D> but was: java.lang.Character@368f2016<D>
+	at com.example.gradecalculator.mutationTests.test_CalculateLetterGrade_MutationKilling(mutationTests.java:14)
+

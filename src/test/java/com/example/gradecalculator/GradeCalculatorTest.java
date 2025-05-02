@@ -18,7 +18,7 @@ public class GradeCalculatorTest {
 
     @ParameterizedTest(name = "{0}")
     @MethodSource("letterGradeTestGenerator")
-    public void testLetterGrade(String testName, double score, String expectedGrade) {
+    public void testLetterGrade(String testName, double score, char expectedGrade) {
         assertEquals(expectedGrade, GradeCalculator.calculateLetterGrade(score), testName);
     }
 

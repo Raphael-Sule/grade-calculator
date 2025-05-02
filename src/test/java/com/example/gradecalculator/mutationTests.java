@@ -10,16 +10,16 @@ public class mutationTests {
 
     @ParameterizedTest(name="{0}")
     @MethodSource("mutationTestGenerator")
-    public void test_CalculateLetterGrade_MutationKilling(String description, double score, String expectedGrade) {
+    public void test_CalculateLetterGrade_MutationKilling(String description, double score, char expectedGrade) {
         assertEquals(expectedGrade, GradeCalculator.calculateLetterGrade(score), description);
     }
 
     private static Stream<Arguments> mutationTestGenerator() {
         return Stream.of(
-            Arguments.of("Mutation ≥ vs > at A boundary", 90.0, "A"),
+            Arguments.of("Mutation ≥ vs > at A boundary", 90.0, 'A'),
             Arguments.of("Mutation ≥ vs > at B boundary", 80.0, "B"),
             Arguments.of("Mutation ≥ vs > at C boundary", 70.0, "C"),
-            Arguments.of("Mutation ≥ vs > at D boundary", 60.0, "D"),
+            Arguments.of("Mutation ≥ vs > at D boundary", 60.0, "D")
         );
     }
 }
