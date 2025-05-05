@@ -1,15 +1,16 @@
 // targeted tests after BVT and ECT are formatted and written in here
 package com.example.gradecalculator;
 
-import org.junit.jupiter.params.ParameterizedTest;
-
 import java.util.stream.Stream;
-import org.junit.jupiter.params.provider.*;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 
 
-public class mutationTests {
+public class GradeCalculatorMutationTests {
 
     @ParameterizedTest(name="{0}")
     @MethodSource("calculateLetterGradeMutationTestGenerator")
@@ -24,7 +25,6 @@ public class mutationTests {
             Arguments.of("t1_line_34", 80.0, "B"),
             Arguments.of("t1_line_39", 70.0, "C"),
             Arguments.of("t1_line_43", 60.0, "D"),
-            
             Arguments.of("t1_line 27", 100.0, 'A'),
             Arguments.of("t1_line 27", 0.0, 'F')
         );
